@@ -1,0 +1,186 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #35474e;
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    min-height: 70px;
+    border-bottom: #77A1D3 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.5;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+/* Navbar Styles */
+.navbar{
+    margin-bottom: 85px !important;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.navbar-collapse {
+    flex-grow: 1; /* Allow the menu to grow within the navbar */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+.navbar-nav .nav-item {
+    /* margin-left: 15px; */
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #77A1D3;
+}
+
+/* Form Styles */
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+form input, form select {
+    width: calc(100% - 22px); /* Adjust width to account for padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+form input:focus, form select:focus {
+    border-color: #77A1D3;
+    outline: none;
+}
+
+form button {
+    margin-bottom: 10px;
+    width: 100%; /* Ensure button fits within form */
+}
+
+/* Button Styles */
+button {
+    background-color: #77A1D3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5271A1;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #77A1D3;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-top: #77A1D3 3px solid;
+    margin-top: 150px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header li {
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
